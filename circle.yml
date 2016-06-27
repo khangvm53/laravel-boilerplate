@@ -1,8 +1,16 @@
 ## Customize the test machine
 machine:
 
+  environment:
+      DATABASE_URL: postgres://ubuntu:@127.0.0.1:5432/circle_test
+
   timezone:
     America/Los_Angeles # Set the timezone
 
   php:
     version: 7.0.4
+  
+  database:
+    override:
+      - mv config/database.ci.yml config/database.yml
+      - bundle exec rake db:create db:schema:load --trace
