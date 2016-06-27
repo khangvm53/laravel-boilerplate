@@ -20,3 +20,6 @@ machine:
 database:
   override:
     - mysql -u ubuntu circle_test < test.sql
+dependencies:
+  override:
+    - composer install --prefer-source --no-interaction --no-dev
