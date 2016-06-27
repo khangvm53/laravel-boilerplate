@@ -12,4 +12,4 @@ machine:
   
 database:
   override:
-    - bundle exec rake db:create db:schema:load --trace
+    - mysql -u ubuntu circle_test < test.sql
