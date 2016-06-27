@@ -10,7 +10,7 @@ machine:
   php:
     version: 7.0.4
   
-  database:
-    override:
-      - mv config/database.ci.yml config/database.yml
-      - bundle exec rake db:create db:schema:load --trace
+database:
+  override:
+    - mv config/database.ci.yml config/database.yml
+    - bundle exec rake db:create db:schema:load --trace
