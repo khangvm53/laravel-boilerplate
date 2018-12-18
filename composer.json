@@ -19,7 +19,9 @@
     "icanboogie/inflector": "^1.4",
     "laravel/socialite": "^3.0",
     "google/apiclient": "^2.0",
-    "dusterio/laravel-aws-worker": "^0.1.5"
+    "dusterio/laravel-aws-worker": "^0.1.5",
+    "mccool/laravel-auto-presenter": "^4.2",
+    "barryvdh/laravel-ide-helper": "1.*"
   },
   "require-dev": {
     "mockery/mockery": "0.9.*",
